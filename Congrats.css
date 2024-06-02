@@ -1,0 +1,91 @@
+*{
+text-rendering: auto;
+user-select: none ;
+}
+
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(BackgroundIMG/Nature.gif);
+}
+
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .Ending
+  {
+  text-align: center;
+   font-size:60px ;
+   letter-spacing: 0px;
+   font-family: Roboto Condensed ;
+   border-right: 5px transparent;
+   width: 100%; 
+   overflow: hidden;
+   color:rgb(255, 230, 0);
+   opacity: 100%;
+  }
+
+
+  .Options 
+{
+  text-align: center;
+  font-size: 50px ;
+  letter-spacing: 0px;
+  font-family: Pixelify Sans ;
+  border-right: 5px transparent;
+  width: 100%; 
+  color:rgb(94, 255, 0);
+  opacity: 100%;
+  font-weight: bold;
+}
+
+.Options :hover {
+  opacity: 200%;
+  background-image: url(BackgroundIMG/Andress.jpg);
+  padding: 3px 25px;
+  transition: .5s;
+  border-radius: 75px;
+  display: inline-flex;
+  color : rgb(255, 235, 52);
+  opacity: 200;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 30px yellow;
+}

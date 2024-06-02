@@ -1,0 +1,111 @@
+*
+{
+  user-select: none;
+  display:inline-flexbox;
+}
+
+body{
+
+    background-image: url(BackgroundIMG/Boat.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1920px 1000px;
+    background-attachment: fixed;
+
+}
+
+.GameName
+{
+text-align: center;
+ font-size:40px ;
+ letter-spacing: 0px;
+ font-family: Seymour One ;
+ border-right: 5px transparent;
+ width: 100%; 
+ overflow: hidden;
+ color:rgb(141, 194, 243);
+ opacity: 100%;
+}
+
+.Options 
+{
+  text-align: center;
+  font-size: 50px ;
+  letter-spacing: 0px;
+  font-family: Pixelify Sans ;
+  border-right: 5px transparent;
+  width: 100%; 
+  overflow: hidden;
+  color:rgb(94, 255, 0);
+  opacity: 100%;
+  font-weight: bold;
+}
+
+.Options :hover {
+  opacity: 200%;
+  background-image: url(BackgroundIMG/Andress.jpg);
+  padding: 3px 25px;
+  transition: .5s;
+  border-radius: 75px;
+  display: inline-flex;
+  color : rgb(255, 196, 0);
+  opacity: 200;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.StartOption {
+  font-size: 140px;
+  color: rgb(113, 255, 120); 
+  cursor: grab;
+
+}
+
+.GuideOption {
+  color:rgb(255, 52, 171);
+}
+
+
+.CreditsOption {
+  color:#27ffed; 
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #444444;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #1effc7;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

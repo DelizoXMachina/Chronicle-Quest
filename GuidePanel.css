@@ -1,0 +1,73 @@
+*
+{
+    background-image: url(21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1880px 970px;
+    background-attachment: fixed;
+    user-select: none;
+    text-align: center;
+}
+
+
+.Guidance { 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: Pixelify Sans ;
+}
+
+
+.Back {
+    font-size: 40px;
+    font-family: Pixelify Sans ;
+    text-decoration: none;
+    color: rgb(2, 0, 133);
+}
+
+Back :hover {
+
+background-color: rgb(255, 255, 137);
+color: rgb(0, 0, 0);
+padding: 3px 25px;
+transition: .5s;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#444444;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #1effc7;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  

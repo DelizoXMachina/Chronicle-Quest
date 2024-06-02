@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Seymour+One&display=swap" rel="stylesheet">
+
+
+
+
+    <title>
+        Chronicle Quest: Historical Game
+    </title>
+
+    <style>
+        .GameName  {
+            text-shadow: 0 0 50px #0066ff, 0 0 20px #000000;
+        }
+
+        .Options {
+            text-shadow: 0 0 40px #000000, 0 0 20px #000000;
+        }
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="loader"></div>
+
+    <audio autoplay loop id="myAudio" >
+        <source src="Pix- Alien wolves.mp3" type="audio/mpeg">
+      </audio>
+      
+      <button class="Play" onclick="playAudio()" type="button"><img height="25px" width="25 px" src="audio.gif" alt=""></button>
+      <button class="Mute" onclick="pauseAudio()" type="button"><img height="25px" width="25px" src="no-audio.gif" alt=""></button>
+
+      <script>
+          var x = document.getElementById("myAudio"); 
+      
+          function playAudio() { 
+            x.play(); 
+          } 
+      
+          function pauseAudio() { 
+           x.pause(); 
+          }
+      </script> 
+
+
+
+<h1 class="GameName"> 
+    CHRONICLE QUEST: <p></p>A HISTORICAL WEB-BASED GAMES FOR KIDS 
+</h1>
+<br><br><br><br><br><br>
+<div class="Options" >
+
+    <a style="text-decoration: none;" class="StartOption" href="puzzle1.html">START GAME</a>
+    <p></p>
+    <a style="text-decoration: none;" class="GuideOption" href="Guide.html">Guide</a>
+    <p></p>
+    <a style="text-decoration: none;" class="CreditsOption" href="Credits.html">Credits</a> 
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

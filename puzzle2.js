@@ -11,7 +11,7 @@ window.onload = function() {
         for (let c = 0; c < columns; c++) {
             //<img>
             let tile = document.createElement("img");
-            tile.src = "images1/images/blank.jfif";
+            tile.src = "Img2/images/blank.jfif";
 
             //DRAG FUNCTIONALITY
             tile.addEventListener("dragstart", dragStart); //click on image to drag
